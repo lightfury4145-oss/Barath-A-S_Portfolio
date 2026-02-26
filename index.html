@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="page">
+  <section class="card">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="bg.mp4" type="video/mp4">
+    </video>
+    <audio id="bg-audio" src="bm.mp3" preload="auto" loop></audio>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="cursor-pulse" aria-hidden="true"></div>
+    <header class="header">
+      <a class="logo" href="#" data-target="home">Barath A S</a>
+      <nav>
+        <a href="#" data-target="about">About Me</a>
+        <a href="#" data-target="projects">Projects</a>
+        <a href="#" data-target="contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home page-section is-active" data-page="home">
+      <div class="left">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1><span class="fade-line">Barath</span><br>A S</h1>
+      </div>
+
+      <div class="center">
+        <div class="glow"></div>
+        <img src="profile.png" alt="Profile portrait">
+      </div>
+
+      <div class="right">
+        <p class="eyebrow">Creative</p>
+        <h2><span class="fade-line">Designer</span><br><span class="and-line">&amp; AI Developer</span></h2>
+      </div>
+    </section>
+
+    <section class="about page-section" data-page="about">
+      <div class="about-left">
+        <div class="glow glow-alt"></div>
+        <img src="profile.png" alt="Profile portrait">
+      </div>
+      <div class="about-right">
+        <p class="eyebrow">Summary</p>
+        <h2>Mechanical Design Engineer</h2>
+        <p class="about-text">
+          Mechanical Design Engineer with 3.5 years of experience in automotive interior trim design,
+          plastic parts, and packaging. Skilled in <span>CATIA</span>, <span>NX</span>, <span>DFMEA</span>,
+          and <span>GD&amp;T</span>. Hands-on building an LLM-based AI assistant for DFMEA failure mode
+          creation and web development for a team one‑stop solution for tracking program status (CN&amp;CCD),
+          standard documents source file, resource planning, and automated AI agent for meeting creation
+          and MOM mail automation.
+        </p>
+        <a class="resume ghost" href="BARATH_CV.pdf" download>Resume</a>
+      </div>
+    </section>
+
+    <section class="projects page-section" data-page="projects">
+      <div class="projects-content">
+        <div class="projects-header">
+          <h2>I Make Incredible <span>Projects</span></h2>
+          <div class="orbit"></div>
+        </div>
+        <div class="projects-track">
+          <button class="projects-nav prev" type="button" aria-label="Previous projects">‹</button>
+          <div class="projects-grid">
+          <article class="project-card">
+            <div class="card-top">
+              <span class="num">01</span>
+              <span class="tag">Design &amp; Development</span>
+            </div>
+            <h3>CC22 (CITROËN BASALT)</h3>
+            <p>
+              • Provided design support for Pillar Trim components and Interior Parts (IP) across development phases.<br>
+              • Created and maintained technical documentation including DFMEA and DVP to support validation activities.<br>
+              • Performed robustness checks for Pillar Trim designs and supported airbag deployment evaluations at GARC.
+            </p>
+            <div class="thumb"><img src="image7.jpg" alt="Citroën Basalt crossover on road"></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top">
+              <span class="num">02</span>
+              <span class="tag">AI</span>
+            </div>
+            <h3>DFMEA AI Assistant</h3>
+            <p>
+              • Developed an AI-powered DFMEA Assistant for structured DFMEA and FBD creation.<br>
+              • Built a Streamlit + FastAPI application integrated with a local LLM for secure engineering workflows.<br>
+              • Enabled standardized DFMEA outputs and guided risk evaluation (Severity, Occurrence, Detection, RPN).<br>
+              • Designed the solution to support scalable DFMEA features including change impact analysis.
+            </p>
+            <div class="thumb"><img src="image2.jpg" alt="DFMEA AI Assistant UI preview"></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top">
+              <span class="num">03</span>
+              <span class="tag">Design</span>
+            </div>
+            <h3>Core Design Development</h3>
+            <p>
+              &bull; Contributed as a core team member to Design Practice Harmonization &amp; Convergence across A, B, C, and D pillar trims.<br>
+              &bull; Standardized hard trim design practices to ensure consistency across pillar components and programs.<br>
+              &bull; Updated core criteria sections in 2D documentation and developed design practice templates for all hard trim components.
+            </p>
+            <div class="thumb"><img src="image3.jpg" alt="Core Design Development pillar trims"></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top">
+              <span class="num">04</span>
+              <span class="tag">CAD Automation</span>
+            </div>
+            <h3>CAD Automation</h3>
+            <p>
+              &bull; Developed CAD automation for thickness analysis using C# to streamline design validation workflows.<br>
+              &bull; Automated thickness evaluation processes to reduce manual effort and improve analysis consistency across CAD models.
+            </p>
+            <div class="thumb"><img src="image4.jpg" alt="CAD automation thickness analysis"></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top">
+              <span class="num">05</span>
+              <span class="tag">Power Apps</span>
+            </div>
+            <h3>Power Apps Application</h3>
+            <p>
+              &bull; Developed a Power Apps solution to track weekly team activities and support resource planning.<br>
+              &bull; Enabled structured task tracking and workload visibility across the team.<br>
+              &bull; Implemented a management dashboard for monitoring team progress and follow-ups.
+            </p>
+            <div class="thumb"><img src="image1.jpg" alt="Power Apps team activity tracker"></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top">
+              <span class="num">06</span>
+              <span class="tag">Portal</span>
+            </div>
+            <h3>Team Website / Portal</h3>
+            <p>
+              &bull; Built a centralized team website with a unified database for storing team data.<br>
+              &bull; Created a one-stop platform for documents, announcements, CN tracking, and team activities.<br>
+              &bull; Improved team communication and accessibility to project information.
+            </p>
+            <div class="thumb"><img src="image6.jpg" alt="Team portal with unified data"></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top">
+              <span class="num">07</span>
+              <span class="tag">AI</span>
+            </div>
+            <h3>AI Agent – Team Support</h3>
+            <p>
+              &bull; Developed an AI Agent to automate email drafting and sending to responsible stakeholders.<br>
+              &bull; Enabled automated weekly project update collection from team members into a central database.<br>
+              &bull; Integrated updates into a manager dashboard for real-time visibility of tasks and progress.
+            </p>
+            <div class="thumb"><img src="image5.jpg" alt="AI agent assisting team updates"></div>
+          </article>
+          </div>
+          <button class="projects-nav next" type="button" aria-label="Next projects">›</button>
+        </div>
+
+        <div class="work-section">
+          <div class="work-header">
+            <p>My Work</p>
+            <h3>Experience</h3>
+          </div>
+          <div class="work-tabs">
+            <button class="work-tab is-active" data-work="experience">Experience</button>
+            <button class="work-tab" data-work="education">Education</button>
+          </div>
+          <div class="work-body is-active" data-work-panel="experience">
+            <div class="work-row">
+              <div class="role">
+                <h4>GET</h4>
+                <span>TryCae</span>
+              </div>
+              <div class="year">Jul 2021<br>Dec 2021</div>
+              <div class="desc">
+                FGD duct of boiler (NTPL). Solidworks.
+              </div>
+            </div>
+            <div class="work-row">
+              <div class="role">
+                <h4>Design<br>Engineer</h4>
+                <span>Stellantis (FCA), Chennai, Tamil Nadu</span>
+              </div>
+              <div class="year">Apr 2023<br>Current</div>
+              <div class="desc">
+                Payroll: Segula.
+              </div>
+            </div>
+          </div>
+          <div class="work-body" data-work-panel="education">
+            <div class="work-row">
+              <div class="role">
+                <h4>B.E.<br>Mechanical</h4>
+                <span>Kongunadu College of Engineering and Technology (Anna University), Trichy</span>
+              </div>
+              <div class="year">2017 - 2021</div>
+              <div class="desc">
+                Bachelor of Engineering in Mechanical Engineering · CGPA: 8.01
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offer-section">
+          <div class="offer-header">
+            <h3>Skill <span>Sets</span></h3>
+          </div>
+          <div class="offer-grid">
+              <article class="offer-card" data-offer="dev">
+                <h4>Developer</h4>
+                <p>
+                  Websites, automations, and AI products using HTML, CSS, and
+                  full-stack creativity plus LLM integration.
+                </p>
+              <p class="offer-sub">Skills &amp; Tools</p>
+              <div class="pill-row is-open">
+                <span>HTML</span><span>CSS</span><span>PHP</span><span>GitHub</span>
+                <span>Python</span><span>C#</span><span>Power Apps</span><span>LLM</span>
+                <span>LLM Applications</span><span>Generative AI</span><span>Prompt Engineering</span>
+                <span>AI Workflow Design</span><span>AI Assistants</span>
+                <span>FastAPI</span><span>Streamlit</span><span>Local LLM Integration</span><span>Automation</span>
+              </div>
+              </article>
+          <article class="offer-card" data-offer="design">
+            <h4>Automotive Design</h4>
+            <p>
+              Mechanical and product design from concept to production, specializing in trims &amp; interior
+              components with strong expertise in CAD modeling and new product development.
+            </p>
+            <p class="offer-sub">Skills &amp; Tools</p>
+            <div class="pill-row is-open">
+              <span>Mechanical Design</span><span>Product Development</span><span>Interior Trim &amp; IP</span><span>DFM</span>
+              <span>Siemens NX (UG NX)</span><span>CATIA</span><span>SolidWorks</span>
+              <span>Engineering Documentation</span>
+            </div>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact page-section" data-page="contact">
+      <div class="contact-hero">
+        <h2>Contact Me</h2>
+        <p>Tell me about our next project.</p>
+      </div>
+      <div class="contact-grid contact-grid-duo">
+        <div class="contact-col contact-col-icon">
+          <div class="icon-circle icon-img"><img src="gmail.png" alt="Gmail icon"></div>
+          <h4>Email (Gmail)</h4>
+          <button class="copy-email" type="button" data-email="barathmechdesigner@gmail.com">Copy Email</button>
+        </div>
+        <div class="contact-col contact-col-icon">
+          <div class="icon-circle icon-img"><img src="linkedin.png" alt="LinkedIn icon"></div>
+          <h4>LinkedIn</h4>
+          <a class="copy-email" href="https://www.linkedin.com/in/barath-a-s-0186b7260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">Open Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <ul class="social"></ul>
+  </section>
+</main>
+
+<script>
+  const sections = document.querySelectorAll(".page-section");
+  const links = document.querySelectorAll(".header a[data-target]");
+  const cursorGlow = document.querySelector(".cursor-glow");
+  const cursorPulse = document.querySelector(".cursor-pulse");
+  const projectsGrid = document.querySelector(".projects-grid");
+  const prevBtn = document.querySelector(".projects-nav.prev");
+  const nextBtn = document.querySelector(".projects-nav.next");
+
+  const setActive = (name) => {
+    sections.forEach((section) => {
+      section.classList.toggle("is-active", section.dataset.page === name);
+    });
+    links.forEach((link) => {
+      link.classList.toggle("is-active", link.dataset.target === name);
+    });
+  };
+
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      setActive(link.dataset.target);
+    });
+  });
+
+  const card = document.querySelector(".card");
+
+  card.addEventListener("mousemove", (event) => {
+    const rect = card.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    cursorGlow.style.setProperty("--cx", `${x}px`);
+    cursorGlow.style.setProperty("--cy", `${y}px`);
+    cursorGlow.style.opacity = "1";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    cursorGlow.style.opacity = "0";
+  });
+
+  card.addEventListener("click", (event) => {
+    const rect = card.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    cursorPulse.style.setProperty("--cx", `${x}px`);
+    cursorPulse.style.setProperty("--cy", `${y}px`);
+    cursorPulse.style.opacity = "1";
+    cursorPulse.classList.remove("is-pulsing");
+    void cursorPulse.offsetWidth;
+    cursorPulse.classList.add("is-pulsing");
+
+    cursorGlow.classList.remove("is-click");
+    void cursorGlow.offsetWidth;
+    cursorGlow.classList.add("is-click");
+  });
+
+  cursorPulse.addEventListener("animationend", () => {
+    cursorPulse.style.opacity = "0";
+  });
+
+  if (projectsGrid && prevBtn && nextBtn) {
+    const scrollByCard = (dir) => {
+      const card = projectsGrid.querySelector(".project-card");
+      if (!card) return;
+      const gap = parseInt(getComputedStyle(projectsGrid).gap || "24", 10);
+      const amount = card.offsetWidth + gap;
+      projectsGrid.scrollBy({ left: dir * amount, behavior: "smooth" });
+    };
+
+    prevBtn.addEventListener("click", () => scrollByCard(-1));
+    nextBtn.addEventListener("click", () => scrollByCard(1));
+  }
+
+  const workTabs = document.querySelectorAll(".work-tab");
+  const workPanels = document.querySelectorAll(".work-body");
+  if (workTabs.length && workPanels.length) {
+    workTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.dataset.work;
+        workTabs.forEach((t) => t.classList.toggle("is-active", t === tab));
+        workPanels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.dataset.workPanel === target);
+        });
+      });
+    });
+  }
+
+  const offerCards = document.querySelectorAll(".offer-card");
+  offerCards.forEach((card) => {
+    const btn = card.querySelector(".offer-action");
+    const pills = card.querySelector(".pill-row");
+    if (!btn || !pills) return;
+    btn.addEventListener("click", () => {
+      pills.classList.toggle("is-open");
+      btn.textContent = pills.classList.contains("is-open") ? "⌃" : "⌄";
+    });
+  });
+
+  const copyBtn = document.querySelector(".copy-email");
+  if (copyBtn) {
+    const originalText = "Copy Email";
+    copyBtn.textContent = originalText;
+    copyBtn.addEventListener("click", async () => {
+      const email = copyBtn.dataset.email || originalText;
+      try {
+        await navigator.clipboard.writeText(email);
+        copyBtn.textContent = "Email copied ✓";
+        copyBtn.classList.add("is-copied");
+        setTimeout(() => {
+          copyBtn.textContent = originalText;
+          copyBtn.classList.remove("is-copied");
+        }, 1800);
+      } catch {
+        copyBtn.textContent = email;
+      }
+    });
+  }
+
+  const bgAudio = document.getElementById("bg-audio");
+  const startAudio = () => {
+    if (!bgAudio) return;
+    bgAudio.volume = 0.3;
+    bgAudio.play().catch(() => {});
+    window.removeEventListener("click", startAudio);
+    window.removeEventListener("keydown", startAudio);
+  };
+  window.addEventListener("click", startAudio, { once: true });
+  window.addEventListener("keydown", startAudio, { once: true });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
